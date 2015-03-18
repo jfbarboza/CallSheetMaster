@@ -6,8 +6,13 @@
 //  Copyright (c) 2015 Jorge Barboza. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <UIKit/UIKit.h>
+#import "User.h"
 
-@interface ProductionViewController : NSViewController
+@interface ProductionViewController : UIViewController
+
+@property (strong, nonatomic) User *mainUser;
+
+- (id) initWithUser:(User *)user;
 
 @end

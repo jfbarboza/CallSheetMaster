@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "UserListViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +18,89 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    return YES;
+    
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSURL *documentsDirectory = [[fileManager URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] firstObject];
+    NSString *documentName = @"coreDocument";
+    NSURL *url = [documentsDirectory URLByAppendingPathComponent:documentName];
+    self.document = [[UIManagedDocument alloc] initWithFileURL:url];
+    NSLog(@"This is the DOCUMENT path in AppDelegate \n %@", self.document.fileURL);
+    BOOL fileExist = [[NSFileManager defaultManager] fileExistsAtPath:[url path]];
+    if (fileExist) {
+        [self.document openWithCompletionHandler:^(BOOL success){
+            if (success) {
+                [self documentIsReady];
+               // NSLog(@"Document exists and is open");
+                [self selectRootViewController];
+            }
+        }];
+    }else {
+        [self.document saveToURL:url forSaveOperation:UIDocumentSaveForCreating completionHandler:^(BOOL success){
+            if (success) {
+                [self documentIsReady];
+                [self selectRootViewController];
+            } else {
+                NSLog(@"couldn't create document at %@", url);
+            }
+        }];
+    }/* 
+      
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"User" inManagedObjectContext:self.managedObjectContext];
+    [request setEntity:entity];
+    NSError *error = nil;
+    [request setResultType:NSDictionaryResultType];
+    [request setReturnsDistinctResults:YES];
+    [request setPropertiesToFetch:@[@"firstName"]];
+    NSArray *users = [self.managedObjectContext executeFetchRequest:request error:&error];
+    NSLog(@"This is in users: %@", users);
+    if (error) {
+        NSLog(@"Unable to execute fetch");
+        NSLog(@"%@, %@", error, error.localizedDescription);
+    } else {
+        if ([users count] != 0) {
+            UserListViewController *viewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"userlist"];
+            UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController];
+            self.window.rootViewController = navController;
+        } else {
+            NSLog(@"Users is empty");
+        }
+    }*/
+   return YES;
+}
+
+- (void) documentIsReady {
+    if (self.document.documentState == UIDocumentStateNormal) {
+        self.managedObjectContext = self.document.managedObjectContext;
+    }
+}
+
+- (void) selectRootViewController{
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"User" inManagedObjectContext:self.managedObjectContext];
+    [request setEntity:entity];
+    NSError *error = nil;
+    [request setResultType:NSDictionaryResultType];
+    [request setReturnsDistinctResults:YES];
+    [request setPropertiesToFetch:@[@"firstName"]];
+    NSArray *users = [self.managedObjectContext executeFetchRequest:request error:&error];
+    // NSLog(@"This is in users: %@", users);
+    if (error) {
+        NSLog(@"Unable to execute fetch");
+        NSLog(@"%@, %@", error, error.localizedDescription);
+    } else {
+        if ([users count] != 0) {
+            UserListViewController *viewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"userlist"];
+            UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController];
+            self.window.rootViewController = navController;
+        } else {
+            UserListViewController *viewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"addUser"];
+            UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController];
+            self.window.rootViewController = navController;
+        }
+    }
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

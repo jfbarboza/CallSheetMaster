@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
+#import "User.h"
 
-@interface ProductionListViewController : UIViewController
+@interface ProductionListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UIAlertViewDelegate, NSFetchedResultsControllerDelegate>
+
+@property (strong, nonatomic) User *mainUser;
 
 @end

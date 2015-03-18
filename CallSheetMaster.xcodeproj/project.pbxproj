@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E1791FE51ABA1F5E00672622 /* ProductionOffice.m in Sources */ = {isa = PBXBuildFile; fileRef = E1791FE41ABA1F5E00672622 /* ProductionOffice.m */; };
+		E18A2F8F1AADF68B00D3AB4F /* RODUSreg300.otf in Resources */ = {isa = PBXBuildFile; fileRef = E18A2F8E1AAD19BD00D3AB4F /* RODUSreg300.otf */; };
+		E18A2F921AAE15B300D3AB4F /* UserListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E18A2F911AAE15B300D3AB4F /* UserListViewController.m */; };
+		E18A2F941AAF439E00D3AB4F /* NavBar.png in Resources */ = {isa = PBXBuildFile; fileRef = E18A2F931AAF439E00D3AB4F /* NavBar.png */; };
+		E18A2F981AAF6BF300D3AB4F /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = E18A2F971AAF6BF300D3AB4F /* AppIcon.png */; };
+		E19851351AB5DBDA00522916 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = E19851341AB5DBDA00522916 /* User.m */; };
+		E19851381AB5DBDA00522916 /* Production.m in Sources */ = {isa = PBXBuildFile; fileRef = E19851371AB5DBDA00522916 /* Production.m */; };
+		E198513C1AB5E96300522916 /* RODUSreg500.otf in Resources */ = {isa = PBXBuildFile; fileRef = E198513A1AB5E94500522916 /* RODUSreg500.otf */; };
+		E198513D1AB5E96300522916 /* RODUSreg700.otf in Resources */ = {isa = PBXBuildFile; fileRef = E198513B1AB5E94500522916 /* RODUSreg700.otf */; };
+		E19851481AB709B000522916 /* ProductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E19851471AB709B000522916 /* ProductionViewController.m */; };
+		E1C806E01AB908E6001BA1EE /* ProductionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C806DF1AB908E6001BA1EE /* ProductionListViewController.m */; };
 		E1D89DD31AABC7F100C804BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D89DD21AABC7F100C804BD /* main.m */; };
 		E1D89DD61AABC7F100C804BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D89DD51AABC7F100C804BD /* AppDelegate.m */; };
 		E1D89DD91AABC7F100C804BD /* CallSheetMaster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1D89DD71AABC7F100C804BD /* CallSheetMaster.xcdatamodeld */; };
@@ -15,6 +26,12 @@
 		E1D89DE11AABC7F100C804BD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1D89DE01AABC7F100C804BD /* Images.xcassets */; };
 		E1D89DE41AABC7F100C804BD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1D89DE21AABC7F100C804BD /* LaunchScreen.xib */; };
 		E1D89DF01AABC7F100C804BD /* CallSheetMasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D89DEF1AABC7F100C804BD /* CallSheetMasterTests.m */; };
+		E1D89DFE1AABCCBF00C804BD /* Launch.png in Resources */ = {isa = PBXBuildFile; fileRef = E1D89DFD1AABCCBF00C804BD /* Launch.png */; };
+		E1E7F37E1AB327AB00AFC515 /* IconLocation3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1E7F37D1AB327AB00AFC515 /* IconLocation3x.png */; };
+		E1E7F3801AB3293900AFC515 /* IconCrew.png in Resources */ = {isa = PBXBuildFile; fileRef = E1E7F37F1AB3293900AFC515 /* IconCrew.png */; };
+		E1E7F3821AB32D1500AFC515 /* IconCast.png in Resources */ = {isa = PBXBuildFile; fileRef = E1E7F3811AB32D1500AFC515 /* IconCast.png */; };
+		E1E7F3841AB335D300AFC515 /* IconScene.png in Resources */ = {isa = PBXBuildFile; fileRef = E1E7F3831AB335D300AFC515 /* IconScene.png */; };
+		E1E7F3861AB33DCD00AFC515 /* IconPrferences.png in Resources */ = {isa = PBXBuildFile; fileRef = E1E7F3851AB33DCD00AFC515 /* IconPrferences.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +45,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E1791FE31ABA1F5E00672622 /* ProductionOffice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductionOffice.h; sourceTree = "<group>"; };
+		E1791FE41ABA1F5E00672622 /* ProductionOffice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductionOffice.m; sourceTree = "<group>"; };
+		E18A2F8E1AAD19BD00D3AB4F /* RODUSreg300.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = RODUSreg300.otf; path = ../RODUSreg300.otf; sourceTree = "<group>"; };
+		E18A2F901AAE15B300D3AB4F /* UserListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserListViewController.h; path = ../UserListViewController.h; sourceTree = "<group>"; };
+		E18A2F911AAE15B300D3AB4F /* UserListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserListViewController.m; path = ../UserListViewController.m; sourceTree = "<group>"; };
+		E18A2F931AAF439E00D3AB4F /* NavBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NavBar.png; path = ../NavBar.png; sourceTree = "<group>"; };
+		E18A2F971AAF6BF300D3AB4F /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon.png; path = ../AppIcon.png; sourceTree = "<group>"; };
+		E19851331AB5DBDA00522916 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = ../User.h; sourceTree = "<group>"; };
+		E19851341AB5DBDA00522916 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = ../User.m; sourceTree = "<group>"; };
+		E19851361AB5DBDA00522916 /* Production.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Production.h; path = ../Production.h; sourceTree = "<group>"; };
+		E19851371AB5DBDA00522916 /* Production.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Production.m; path = ../Production.m; sourceTree = "<group>"; };
+		E198513A1AB5E94500522916 /* RODUSreg500.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = RODUSreg500.otf; sourceTree = "<group>"; };
+		E198513B1AB5E94500522916 /* RODUSreg700.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = RODUSreg700.otf; sourceTree = "<group>"; };
+		E19851461AB709B000522916 /* ProductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductionViewController.h; path = ../ProductionViewController.h; sourceTree = "<group>"; };
+		E19851471AB709B000522916 /* ProductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductionViewController.m; path = ../ProductionViewController.m; sourceTree = "<group>"; };
+		E1C806DE1AB908E6001BA1EE /* ProductionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductionListViewController.h; sourceTree = "<group>"; };
+		E1C806DF1AB908E6001BA1EE /* ProductionListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductionListViewController.m; sourceTree = "<group>"; };
 		E1D89DCD1AABC7F100C804BD /* CallSheetMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallSheetMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D89DD11AABC7F100C804BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1D89DD21AABC7F100C804BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,6 +76,12 @@
 		E1D89DE91AABC7F100C804BD /* CallSheetMasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CallSheetMasterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D89DEE1AABC7F100C804BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1D89DEF1AABC7F100C804BD /* CallSheetMasterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallSheetMasterTests.m; sourceTree = "<group>"; };
+		E1D89DFD1AABCCBF00C804BD /* Launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Launch.png; path = ../../Images/Launch.png; sourceTree = "<group>"; };
+		E1E7F37D1AB327AB00AFC515 /* IconLocation3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconLocation3x.png; sourceTree = "<group>"; };
+		E1E7F37F1AB3293900AFC515 /* IconCrew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconCrew.png; sourceTree = "<group>"; };
+		E1E7F3811AB32D1500AFC515 /* IconCast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconCast.png; sourceTree = "<group>"; };
+		E1E7F3831AB335D300AFC515 /* IconScene.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconScene.png; sourceTree = "<group>"; };
+		E1E7F3851AB33DCD00AFC515 /* IconPrferences.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconPrferences.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +102,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E19851391AB5E85D00522916 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E198513A1AB5E94500522916 /* RODUSreg500.otf */,
+				E198513B1AB5E94500522916 /* RODUSreg700.otf */,
+				E1E7F37D1AB327AB00AFC515 /* IconLocation3x.png */,
+				E18A2F8E1AAD19BD00D3AB4F /* RODUSreg300.otf */,
+				E1E7F3851AB33DCD00AFC515 /* IconPrferences.png */,
+				E1E7F3831AB335D300AFC515 /* IconScene.png */,
+				E1E7F3811AB32D1500AFC515 /* IconCast.png */,
+				E1E7F37F1AB3293900AFC515 /* IconCrew.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		E1C806D21AB90279001BA1EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E19851461AB709B000522916 /* ProductionViewController.h */,
+				E19851471AB709B000522916 /* ProductionViewController.m */,
+				E18A2F901AAE15B300D3AB4F /* UserListViewController.h */,
+				E18A2F911AAE15B300D3AB4F /* UserListViewController.m */,
+				E1D89DDA1AABC7F100C804BD /* ViewController.h */,
+				E1D89DDB1AABC7F100C804BD /* ViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		E1D89DC41AABC7F000C804BD = {
 			isa = PBXGroup;
 			children = (
+				E1791FE31ABA1F5E00672622 /* ProductionOffice.h */,
+				E1791FE41ABA1F5E00672622 /* ProductionOffice.m */,
+				E1C806DE1AB908E6001BA1EE /* ProductionListViewController.h */,
+				E1C806DF1AB908E6001BA1EE /* ProductionListViewController.m */,
 				E1D89DCF1AABC7F100C804BD /* CallSheetMaster */,
 				E1D89DEC1AABC7F100C804BD /* CallSheetMasterTests */,
 				E1D89DCE1AABC7F100C804BD /* Products */,
@@ -85,12 +157,12 @@
 			children = (
 				E1D89DD41AABC7F100C804BD /* AppDelegate.h */,
 				E1D89DD51AABC7F100C804BD /* AppDelegate.m */,
-				E1D89DDA1AABC7F100C804BD /* ViewController.h */,
-				E1D89DDB1AABC7F100C804BD /* ViewController.m */,
+				E1C806D21AB90279001BA1EE /* View */,
 				E1D89DDD1AABC7F100C804BD /* Main.storyboard */,
 				E1D89DE01AABC7F100C804BD /* Images.xcassets */,
 				E1D89DE21AABC7F100C804BD /* LaunchScreen.xib */,
 				E1D89DD71AABC7F100C804BD /* CallSheetMaster.xcdatamodeld */,
+				E1D89DFC1AABC88700C804BD /* DataModelEntities */,
 				E1D89DD01AABC7F100C804BD /* Supporting Files */,
 			);
 			path = CallSheetMaster;
@@ -99,6 +171,10 @@
 		E1D89DD01AABC7F100C804BD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E18A2F971AAF6BF300D3AB4F /* AppIcon.png */,
+				E18A2F931AAF439E00D3AB4F /* NavBar.png */,
+				E1D89DFD1AABCCBF00C804BD /* Launch.png */,
+				E19851391AB5E85D00522916 /* Assets */,
 				E1D89DD11AABC7F100C804BD /* Info.plist */,
 				E1D89DD21AABC7F100C804BD /* main.m */,
 			);
@@ -120,6 +196,17 @@
 				E1D89DEE1AABC7F100C804BD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E1D89DFC1AABC88700C804BD /* DataModelEntities */ = {
+			isa = PBXGroup;
+			children = (
+				E19851361AB5DBDA00522916 /* Production.h */,
+				E19851371AB5DBDA00522916 /* Production.m */,
+				E19851331AB5DBDA00522916 /* User.h */,
+				E19851341AB5DBDA00522916 /* User.m */,
+			);
+			name = DataModelEntities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,9 +289,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E198513C1AB5E96300522916 /* RODUSreg500.otf in Resources */,
+				E198513D1AB5E96300522916 /* RODUSreg700.otf in Resources */,
+				E1E7F37E1AB327AB00AFC515 /* IconLocation3x.png in Resources */,
+				E18A2F8F1AADF68B00D3AB4F /* RODUSreg300.otf in Resources */,
+				E1D89DFE1AABCCBF00C804BD /* Launch.png in Resources */,
+				E1E7F3861AB33DCD00AFC515 /* IconPrferences.png in Resources */,
+				E1E7F3821AB32D1500AFC515 /* IconCast.png in Resources */,
+				E1E7F3841AB335D300AFC515 /* IconScene.png in Resources */,
 				E1D89DDF1AABC7F100C804BD /* Main.storyboard in Resources */,
 				E1D89DE41AABC7F100C804BD /* LaunchScreen.xib in Resources */,
 				E1D89DE11AABC7F100C804BD /* Images.xcassets in Resources */,
+				E18A2F941AAF439E00D3AB4F /* NavBar.png in Resources */,
+				E18A2F981AAF6BF300D3AB4F /* AppIcon.png in Resources */,
+				E1E7F3801AB3293900AFC515 /* IconCrew.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,10 +320,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1791FE51ABA1F5E00672622 /* ProductionOffice.m in Sources */,
+				E19851351AB5DBDA00522916 /* User.m in Sources */,
 				E1D89DD61AABC7F100C804BD /* AppDelegate.m in Sources */,
+				E1C806E01AB908E6001BA1EE /* ProductionListViewController.m in Sources */,
 				E1D89DD91AABC7F100C804BD /* CallSheetMaster.xcdatamodeld in Sources */,
+				E19851481AB709B000522916 /* ProductionViewController.m in Sources */,
 				E1D89DDC1AABC7F100C804BD /* ViewController.m in Sources */,
 				E1D89DD31AABC7F100C804BD /* main.m in Sources */,
+				E19851381AB5DBDA00522916 /* Production.m in Sources */,
+				E18A2F921AAE15B300D3AB4F /* UserListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +520,7 @@
 				E1D89DF51AABC7F100C804BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E1D89DF61AABC7F100C804BD /* Build configuration list for PBXNativeTarget "CallSheetMasterTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +529,7 @@
 				E1D89DF81AABC7F100C804BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

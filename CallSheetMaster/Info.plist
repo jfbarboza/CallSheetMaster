@@ -33,8 +33,12 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>RODUSreg300.otf</string>
+		<string>RODUSreg500.otf</string>
+		<string>RODUSreg700.otf</string>
 	</array>
 </dict>
 </plist>
