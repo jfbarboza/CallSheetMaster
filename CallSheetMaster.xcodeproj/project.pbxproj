@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E1138D6E1ABC9F9300AC9261 /* Production.m in Sources */ = {isa = PBXBuildFile; fileRef = E1138D6D1ABC9F9300AC9261 /* Production.m */; };
+		E1138D711ABC9F9400AC9261 /* CrewMember.m in Sources */ = {isa = PBXBuildFile; fileRef = E1138D701ABC9F9400AC9261 /* CrewMember.m */; };
+		E1138D741ABC9F9400AC9261 /* Scenes.m in Sources */ = {isa = PBXBuildFile; fileRef = E1138D731ABC9F9400AC9261 /* Scenes.m */; };
+		E1138D771ABC9F9400AC9261 /* Locations.m in Sources */ = {isa = PBXBuildFile; fileRef = E1138D761ABC9F9400AC9261 /* Locations.m */; };
+		E1138D7A1ABC9F9400AC9261 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = E1138D791ABC9F9400AC9261 /* User.m */; };
+		E1138D7C1ABCA3CF00AC9261 /* lineBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = E1138D7B1ABCA3CF00AC9261 /* lineBlue.png */; };
 		E1791FE51ABA1F5E00672622 /* ProductionOffice.m in Sources */ = {isa = PBXBuildFile; fileRef = E1791FE41ABA1F5E00672622 /* ProductionOffice.m */; };
+		E1791FE71ABB5E3C00672622 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1791FE61ABB5E3C00672622 /* GoogleMobileAds.framework */; };
+		E18839701ABBA38400ED7918 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E188396E1ABBA38400ED7918 /* AddressBook.framework */; };
+		E18839711ABBA38400ED7918 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E188396F1ABBA38400ED7918 /* AddressBookUI.framework */; };
+		E18839771ABBA64700ED7918 /* CrewMemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E18839761ABBA64700ED7918 /* CrewMemberViewController.m */; };
 		E18A2F8F1AADF68B00D3AB4F /* RODUSreg300.otf in Resources */ = {isa = PBXBuildFile; fileRef = E18A2F8E1AAD19BD00D3AB4F /* RODUSreg300.otf */; };
 		E18A2F921AAE15B300D3AB4F /* UserListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E18A2F911AAE15B300D3AB4F /* UserListViewController.m */; };
 		E18A2F941AAF439E00D3AB4F /* NavBar.png in Resources */ = {isa = PBXBuildFile; fileRef = E18A2F931AAF439E00D3AB4F /* NavBar.png */; };
 		E18A2F981AAF6BF300D3AB4F /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = E18A2F971AAF6BF300D3AB4F /* AppIcon.png */; };
-		E19851351AB5DBDA00522916 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = E19851341AB5DBDA00522916 /* User.m */; };
-		E19851381AB5DBDA00522916 /* Production.m in Sources */ = {isa = PBXBuildFile; fileRef = E19851371AB5DBDA00522916 /* Production.m */; };
 		E198513C1AB5E96300522916 /* RODUSreg500.otf in Resources */ = {isa = PBXBuildFile; fileRef = E198513A1AB5E94500522916 /* RODUSreg500.otf */; };
 		E198513D1AB5E96300522916 /* RODUSreg700.otf in Resources */ = {isa = PBXBuildFile; fileRef = E198513B1AB5E94500522916 /* RODUSreg700.otf */; };
 		E19851481AB709B000522916 /* ProductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E19851471AB709B000522916 /* ProductionViewController.m */; };
@@ -45,17 +53,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E1138D6C1ABC9F9300AC9261 /* Production.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Production.h; sourceTree = "<group>"; };
+		E1138D6D1ABC9F9300AC9261 /* Production.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Production.m; sourceTree = "<group>"; };
+		E1138D6F1ABC9F9400AC9261 /* CrewMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrewMember.h; sourceTree = "<group>"; };
+		E1138D701ABC9F9400AC9261 /* CrewMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrewMember.m; sourceTree = "<group>"; };
+		E1138D721ABC9F9400AC9261 /* Scenes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scenes.h; sourceTree = "<group>"; };
+		E1138D731ABC9F9400AC9261 /* Scenes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scenes.m; sourceTree = "<group>"; };
+		E1138D751ABC9F9400AC9261 /* Locations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Locations.h; sourceTree = "<group>"; };
+		E1138D761ABC9F9400AC9261 /* Locations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Locations.m; sourceTree = "<group>"; };
+		E1138D781ABC9F9400AC9261 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		E1138D791ABC9F9400AC9261 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		E1138D7B1ABCA3CF00AC9261 /* lineBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lineBlue.png; path = ../../Images/lineBlue.png; sourceTree = "<group>"; };
 		E1791FE31ABA1F5E00672622 /* ProductionOffice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductionOffice.h; sourceTree = "<group>"; };
 		E1791FE41ABA1F5E00672622 /* ProductionOffice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductionOffice.m; sourceTree = "<group>"; };
+		E1791FE61ABB5E3C00672622 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		E188396E1ABBA38400ED7918 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		E188396F1ABBA38400ED7918 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		E18839751ABBA64700ED7918 /* CrewMemberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CrewMemberViewController.h; path = ../CrewMemberViewController.h; sourceTree = "<group>"; };
+		E18839761ABBA64700ED7918 /* CrewMemberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CrewMemberViewController.m; path = ../CrewMemberViewController.m; sourceTree = "<group>"; };
 		E18A2F8E1AAD19BD00D3AB4F /* RODUSreg300.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = RODUSreg300.otf; path = ../RODUSreg300.otf; sourceTree = "<group>"; };
 		E18A2F901AAE15B300D3AB4F /* UserListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserListViewController.h; path = ../UserListViewController.h; sourceTree = "<group>"; };
 		E18A2F911AAE15B300D3AB4F /* UserListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserListViewController.m; path = ../UserListViewController.m; sourceTree = "<group>"; };
 		E18A2F931AAF439E00D3AB4F /* NavBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NavBar.png; path = ../NavBar.png; sourceTree = "<group>"; };
 		E18A2F971AAF6BF300D3AB4F /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon.png; path = ../AppIcon.png; sourceTree = "<group>"; };
-		E19851331AB5DBDA00522916 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = ../User.h; sourceTree = "<group>"; };
-		E19851341AB5DBDA00522916 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = ../User.m; sourceTree = "<group>"; };
-		E19851361AB5DBDA00522916 /* Production.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Production.h; path = ../Production.h; sourceTree = "<group>"; };
-		E19851371AB5DBDA00522916 /* Production.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Production.m; path = ../Production.m; sourceTree = "<group>"; };
 		E198513A1AB5E94500522916 /* RODUSreg500.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = RODUSreg500.otf; sourceTree = "<group>"; };
 		E198513B1AB5E94500522916 /* RODUSreg700.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = RODUSreg700.otf; sourceTree = "<group>"; };
 		E19851461AB709B000522916 /* ProductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductionViewController.h; path = ../ProductionViewController.h; sourceTree = "<group>"; };
@@ -89,6 +109,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E18839701ABBA38400ED7918 /* AddressBook.framework in Frameworks */,
+				E18839711ABBA38400ED7918 /* AddressBookUI.framework in Frameworks */,
+				E1791FE71ABB5E3C00672622 /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +128,7 @@
 		E19851391AB5E85D00522916 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				E1138D7B1ABCA3CF00AC9261 /* lineBlue.png */,
 				E198513A1AB5E94500522916 /* RODUSreg500.otf */,
 				E198513B1AB5E94500522916 /* RODUSreg700.otf */,
 				E1E7F37D1AB327AB00AFC515 /* IconLocation3x.png */,
@@ -120,6 +144,8 @@
 		E1C806D21AB90279001BA1EE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E18839751ABBA64700ED7918 /* CrewMemberViewController.h */,
+				E18839761ABBA64700ED7918 /* CrewMemberViewController.m */,
 				E19851461AB709B000522916 /* ProductionViewController.h */,
 				E19851471AB709B000522916 /* ProductionViewController.m */,
 				E18A2F901AAE15B300D3AB4F /* UserListViewController.h */,
@@ -133,6 +159,9 @@
 		E1D89DC41AABC7F000C804BD = {
 			isa = PBXGroup;
 			children = (
+				E188396E1ABBA38400ED7918 /* AddressBook.framework */,
+				E188396F1ABBA38400ED7918 /* AddressBookUI.framework */,
+				E1791FE61ABB5E3C00672622 /* GoogleMobileAds.framework */,
 				E1791FE31ABA1F5E00672622 /* ProductionOffice.h */,
 				E1791FE41ABA1F5E00672622 /* ProductionOffice.m */,
 				E1C806DE1AB908E6001BA1EE /* ProductionListViewController.h */,
@@ -161,7 +190,6 @@
 				E1D89DDD1AABC7F100C804BD /* Main.storyboard */,
 				E1D89DE01AABC7F100C804BD /* Images.xcassets */,
 				E1D89DE21AABC7F100C804BD /* LaunchScreen.xib */,
-				E1D89DD71AABC7F100C804BD /* CallSheetMaster.xcdatamodeld */,
 				E1D89DFC1AABC88700C804BD /* DataModelEntities */,
 				E1D89DD01AABC7F100C804BD /* Supporting Files */,
 			);
@@ -201,10 +229,17 @@
 		E1D89DFC1AABC88700C804BD /* DataModelEntities */ = {
 			isa = PBXGroup;
 			children = (
-				E19851361AB5DBDA00522916 /* Production.h */,
-				E19851371AB5DBDA00522916 /* Production.m */,
-				E19851331AB5DBDA00522916 /* User.h */,
-				E19851341AB5DBDA00522916 /* User.m */,
+				E1D89DD71AABC7F100C804BD /* CallSheetMaster.xcdatamodeld */,
+				E1138D781ABC9F9400AC9261 /* User.h */,
+				E1138D791ABC9F9400AC9261 /* User.m */,
+				E1138D751ABC9F9400AC9261 /* Locations.h */,
+				E1138D761ABC9F9400AC9261 /* Locations.m */,
+				E1138D721ABC9F9400AC9261 /* Scenes.h */,
+				E1138D731ABC9F9400AC9261 /* Scenes.m */,
+				E1138D6F1ABC9F9400AC9261 /* CrewMember.h */,
+				E1138D701ABC9F9400AC9261 /* CrewMember.m */,
+				E1138D6C1ABC9F9300AC9261 /* Production.h */,
+				E1138D6D1ABC9F9300AC9261 /* Production.m */,
 			);
 			name = DataModelEntities;
 			sourceTree = "<group>";
@@ -301,6 +336,7 @@
 				E1D89DE41AABC7F100C804BD /* LaunchScreen.xib in Resources */,
 				E1D89DE11AABC7F100C804BD /* Images.xcassets in Resources */,
 				E18A2F941AAF439E00D3AB4F /* NavBar.png in Resources */,
+				E1138D7C1ABCA3CF00AC9261 /* lineBlue.png in Resources */,
 				E18A2F981AAF6BF300D3AB4F /* AppIcon.png in Resources */,
 				E1E7F3801AB3293900AFC515 /* IconCrew.png in Resources */,
 			);
@@ -320,16 +356,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1138D741ABC9F9400AC9261 /* Scenes.m in Sources */,
 				E1791FE51ABA1F5E00672622 /* ProductionOffice.m in Sources */,
-				E19851351AB5DBDA00522916 /* User.m in Sources */,
 				E1D89DD61AABC7F100C804BD /* AppDelegate.m in Sources */,
 				E1C806E01AB908E6001BA1EE /* ProductionListViewController.m in Sources */,
+				E18839771ABBA64700ED7918 /* CrewMemberViewController.m in Sources */,
 				E1D89DD91AABC7F100C804BD /* CallSheetMaster.xcdatamodeld in Sources */,
 				E19851481AB709B000522916 /* ProductionViewController.m in Sources */,
+				E1138D6E1ABC9F9300AC9261 /* Production.m in Sources */,
+				E1138D7A1ABC9F9400AC9261 /* User.m in Sources */,
 				E1D89DDC1AABC7F100C804BD /* ViewController.m in Sources */,
+				E1138D711ABC9F9400AC9261 /* CrewMember.m in Sources */,
 				E1D89DD31AABC7F100C804BD /* main.m in Sources */,
-				E19851381AB5DBDA00522916 /* Production.m in Sources */,
 				E18A2F921AAE15B300D3AB4F /* UserListViewController.m in Sources */,
+				E1138D771ABC9F9400AC9261 /* Locations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +491,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CallSheetMaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -461,6 +505,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CallSheetMaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

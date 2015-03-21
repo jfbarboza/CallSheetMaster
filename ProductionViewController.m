@@ -23,6 +23,11 @@
 @implementation ProductionViewController
 
 - (void)viewDidLoad {
+    self.view.backgroundColor = [UIColor colorWithRed:0.00
+                                                green:0.00
+                                                 blue:0.00
+                                                alpha:1.0];
+    
     NSLog(@"%@", self.mainUser);
     // Set title for view controller
     self.title = [NSString stringWithFormat:@"New production for %@", self.mainUser.firstName];
@@ -70,7 +75,7 @@
             [request setPropertiesToFetch:@[@"firstName"]];
             NSArray *users = [app.managedObjectContext executeFetchRequest:request error:&error];
             NSLog(@"This is what you just save: %@", users);
-            [self performSegueWithIdentifier:@"ProductionOffice" sender:self];
+            [self performSegueWithIdentifier:@"creatingToOffice" sender:self];
         } else {
             NSLog(@"Data not save :( ");
         }

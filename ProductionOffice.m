@@ -10,4 +10,8 @@
 
 @implementation ProductionOffice
 
+- (void)viewDidLoad {
+    self.title = [NSString stringWithFormat:@"Production Office: %@", self.thisProduction.prodTitle];
+    [super viewDidLoad];
+}
 @end

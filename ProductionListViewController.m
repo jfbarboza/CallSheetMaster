@@ -10,6 +10,7 @@
 #import "AppDelegate.h"
 #import "User.h"
 #import "Production.h"
+#import "ProductionOffice.h"
 
 @interface ProductionListViewController()
 
@@ -90,6 +91,65 @@
     cell.textLabel.text = [prod valueForKey:@"prodTitle"];
     //NSLog(@"Production Title: %@", [prod valueForKey:@"prodTitle"]);
 }
+
+
+#pragma mark - NSFetchedResultsControllerDelegate methods
+
+- (void)controllerWillChangeContent:(NSFetchedResultsController *)controller {
+    [self.tableView beginUpdates];
+}
+
+- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller {
+    [self.tableView endUpdates];
+}
+
+
+
+- (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath *)newIndexPath {
+    switch (type) {
+        case NSFetchedResultsChangeInsert: {
+            [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+            break;
+        }
+        case NSFetchedResultsChangeDelete: {
+            [self.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+            break;
+        }
+            //REVISAR
+        case NSFetchedResultsChangeUpdate: {
+            [self configureCell:[self.tableView cellForRowAtIndexPath:indexPath] atIndexPath:indexPath];
+            break;
+        }
+        case NSFetchedResultsChangeMove: {
+            [self.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+            [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+            break;
+        }
+    }
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    self.path = indexPath;
+    // Deselect the user from tableView
+    [self performSegueWithIdentifier:@"toProductionOffice" sender:self];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"toProductionOffice"]) {
+        ProductionOffice *pvc = segue.destinationViewController;
+        pvc.mainUser = self.selectedUser;
+        NSSet *prodRecords = [self.mainUser valueForKey:@"prodCompany"];
+        NSArray *prodList = [prodRecords allObjects];
+        Production *prod = [prodList objectAtIndex:self.path.row];
+        pvc.thisProduction = prod;
+        NSLog(@"This is mainUser in prepare for segue: %@", pvc.mainUser);
+    }
+}
+
+
+
 
 
 @end

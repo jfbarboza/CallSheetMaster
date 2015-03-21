@@ -11,6 +11,7 @@
 #import "User.h"
 #import "ProductionViewController.h"
 #import "ProductionListViewController.h"
+@import GoogleMobileAds;
 
 @interface UserListViewController ()
 
@@ -27,10 +28,11 @@
 
 
 - (void)viewDidLoad {
-    self.view.backgroundColor = [UIColor colorWithRed:0.80
-                                                green:0.80
-                                                 blue:0.80
+    self.view.backgroundColor = [UIColor colorWithRed:0.00
+                                                green:0.00
+                                                 blue:0.00
                                                 alpha:1.0];
+    
     //self.tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectZero];
     UIImage *navigationBarBackgroung = [[UIImage imageNamed:@"NavBar.png"] resizableImageWithCapInsets:UIEdgeInsetsMake( 0, 0, 0, 0)];
     [[UINavigationBar appearance] setBackgroundImage:navigationBarBackgroung forBarMetrics:UIBarMetricsDefault];
@@ -57,6 +59,10 @@
         NSLog(@"Unable to perform fetch.");
         NSLog(@"%@, %@", error, error.localizedDescription);
     }
+    NSLog(@"Google Mobile Ads SDK version: %@", [GADRequest sdkVersion]);
+    self.bannerView.adUnitID =@"ca-app-pub-3940256099942544/2934735716";
+    self.bannerView.rootViewController = self;
+    [self.bannerView loadRequest:[GADRequest request]];
 
     [super viewDidLoad];
 
@@ -90,11 +96,12 @@
 - (void) configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath{
     NSManagedObject *record = [self.fetchedResultsController objectAtIndexPath:indexPath];
     cell.textLabel.text = [record valueForKey:@"firstName"];
+    cell.textLabel.font = [UIFont fontWithName:@"RODUSreg300" size:12];
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    cell.backgroundColor = (indexPath.row%2)?[UIColor lightGrayColor]:[UIColor grayColor];
+    cell.backgroundColor = (indexPath.row%2)?[UIColor colorWithRed:159.00/255 green:248.00/255 blue:251.00/255 alpha:1.00]:[UIColor colorWithRed: 27.00 /255 green:247.00 / 255 blue:255.00/255 alpha:1.00];
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath

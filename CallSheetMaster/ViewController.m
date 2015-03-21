@@ -27,9 +27,9 @@
 
 - (void)viewDidLoad {
   //  [self isCoreDataLoaded];
-    self.view.backgroundColor = [UIColor colorWithRed:0.80
-                                                green:0.80
-                                                 blue:0.80
+    self.view.backgroundColor = [UIColor colorWithRed:0.00
+                                                green:0.00
+                                                 blue:0.00
                                                 alpha:1.0];
     [super viewDidLoad];
     

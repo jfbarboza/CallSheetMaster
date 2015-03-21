@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "User.h"
+#import "Production.h"
 
 @interface ProductionOffice : UITabBarController
+
+@property (strong, nonatomic) User *mainUser;
+@property (strong, nonatomic) Production *thisProduction;
 
 @end
