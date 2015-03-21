@@ -37,7 +37,14 @@
     // Set Navegation Bar Background
     UIImage *navigationBarBackgroung = [[UIImage imageNamed:@"NavBar.png"] resizableImageWithCapInsets:UIEdgeInsetsMake( 0, 0, 0, 0)];
     [self.navigationController.navigationBar setBackgroundImage:navigationBarBackgroung forBarMetrics:UIBarMetricsDefault];
-
+    
+    NSShadow *shadow = [[NSShadow alloc] init];
+    shadow.shadowColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.8];
+    shadow.shadowOffset = CGSizeMake(0, 1);
+    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                                     [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0], NSForegroundColorAttributeName,
+                                                                     shadow, NSShadowAttributeName,
+                                                                     [UIFont fontWithName:@"RODUSreg500" size:15.0], NSFontAttributeName, nil]];
     
     AppDelegate *app = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     app.managedObjectContext = app.document.managedObjectContext;

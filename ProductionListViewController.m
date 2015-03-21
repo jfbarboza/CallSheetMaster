@@ -11,6 +11,7 @@
 #import "User.h"
 #import "Production.h"
 #import "ProductionOffice.h"
+#import "ProductionViewController.h"
 
 @interface ProductionListViewController()
 
@@ -31,8 +32,8 @@
                                                 blue:0.80
                                                 alpha:1.0];
     //self.tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectZero];
-    UIImage *navigationBarBackgroung = [[UIImage imageNamed:@"NavBar.png"] resizableImageWithCapInsets:UIEdgeInsetsMake( 0, 0, 0, 0)];
-    [[UINavigationBar appearance] setBackgroundImage:navigationBarBackgroung forBarMetrics:UIBarMetricsDefault];
+//    UIImage *navigationBarBackgroung = [[UIImage imageNamed:@"NavBar.png"] resizableImageWithCapInsets:UIEdgeInsetsMake( 0, 0, 0, 0)];
+//    [[UINavigationBar appearance] setBackgroundImage:navigationBarBackgroung forBarMetrics:UIBarMetricsDefault];
     
     // Call AppDelegate to work on its context
     
@@ -144,6 +145,13 @@
         NSArray *prodList = [prodRecords allObjects];
         Production *prod = [prodList objectAtIndex:self.path.row];
         pvc.thisProduction = prod;
+        NSLog(@"This is mainUser in prepare for segue: %@", pvc.mainUser);
+    }
+    
+    if ([segue.identifier isEqualToString:@"newProdSegue2"]) {
+        ProductionViewController *pvc = segue.destinationViewController;
+        NSLog(@"This is selected User in prepare for segue %@", self.selectedUser);
+        pvc.mainUser = self.mainUser;
         NSLog(@"This is mainUser in prepare for segue: %@", pvc.mainUser);
     }
 }
