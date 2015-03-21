@@ -34,9 +34,23 @@
     
     // Set right navigation button to call save production
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(saveProductionInfo)];
+//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(saveProductionInfo)];
     
+    // Style Text fields
+    self.prodName.layer.cornerRadius=8.0f;
+    self.prodName.layer.masksToBounds=YES;
+    self.prodName.layer.borderColor=[[UIColor colorWithRed:159.00/255 green:248.00/255 blue:251.00/255 alpha:1.00]CGColor];
+    self.prodName.layer.borderWidth= 0.5f;
     
+    self.prodCompany.layer.cornerRadius=8.0f;
+    self.prodCompany.layer.masksToBounds=YES;
+    self.prodCompany.layer.borderColor=[[UIColor colorWithRed:159.00/255 green:248.00/255 blue:251.00/255 alpha:1.00]CGColor];
+    self.prodCompany.layer.borderWidth= 0.5f;
+    
+    self.prodDescription.layer.cornerRadius=8.0f;
+    self.prodDescription.layer.masksToBounds=YES;
+    self.prodDescription.layer.borderColor=[[UIColor colorWithRed:159.00/255 green:248.00/255 blue:251.00/255 alpha:1.00]CGColor];
+    self.prodDescription.layer.borderWidth= 0.5f;
     
     [super viewDidLoad];
     // Do view setup here.

@@ -10,6 +10,7 @@
 #import "AppDelegate.h"
 #import "User.h"
 #import "ProductionViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 
 @interface ViewController ()
@@ -26,12 +27,48 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
-  //  [self isCoreDataLoaded];
+    
+    // Background Color
+    
     self.view.backgroundColor = [UIColor colorWithRed:0.00
                                                 green:0.00
                                                  blue:0.00
                                                 alpha:1.0];
+    
+    // Text Fields Style
+    
+    self.firstNameTF.layer.cornerRadius=8.0f;
+    self.firstNameTF.layer.masksToBounds=YES;
+    self.firstNameTF.layer.borderColor=[[UIColor colorWithRed:159.00/255 green:248.00/255 blue:251.00/255 alpha:1.00]CGColor];
+    self.firstNameTF.layer.borderWidth= 0.5f;
+    
+    self.lastNameTF.layer.cornerRadius=8.0f;
+    self.lastNameTF.layer.masksToBounds=YES;
+    self.lastNameTF.layer.borderColor=[[UIColor colorWithRed:159.00/255 green:248.00/255 blue:251.00/255 alpha:1.00]CGColor];
+    self.lastNameTF.layer.borderWidth= 0.5f;
+    
+    self.passTF.layer.cornerRadius=8.0f;
+    self.passTF.layer.masksToBounds=YES;
+    self.passTF.layer.borderColor=[[UIColor colorWithRed:159.00/255 green:248.00/255 blue:251.00/255 alpha:1.00]CGColor];
+    self.passTF.layer.borderWidth= 0.5f;
+    
+    self.confirmPassTF.layer.cornerRadius=8.0f;
+    self.confirmPassTF.layer.masksToBounds=YES;
+    self.confirmPassTF.layer.borderColor=[[UIColor colorWithRed:159.00/255 green:248.00/255 blue:251.00/255 alpha:1.00]CGColor];
+    self.confirmPassTF.layer.borderWidth= 0.5f;
+
+    self.telephoneTF.layer.cornerRadius=8.0f;
+    self.telephoneTF.layer.masksToBounds=YES;
+    self.telephoneTF.layer.borderColor=[[UIColor colorWithRed:159.00/255 green:248.00/255 blue:251.00/255 alpha:1.00]CGColor];
+    self.telephoneTF.layer.borderWidth= 0.5f;
+    
+    self.emailTF.layer.cornerRadius=8.0f;
+    self.emailTF.layer.masksToBounds=YES;
+    self.emailTF.layer.borderColor=[[UIColor colorWithRed:159.00/255 green:248.00/255 blue:251.00/255 alpha:1.00]CGColor];
+    self.emailTF.layer.borderWidth= 0.5f;
+    
     [super viewDidLoad];
+    
     
 
     // Do any additional setup after loading the view, typically from a nib.
@@ -40,6 +77,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void) viewDidAppear:(BOOL)animated{
+    UIImage *navigationBarBackgroung = [[UIImage imageNamed:@"NavBar.png"] resizableImageWithCapInsets:UIEdgeInsetsMake( 0, 0, 0, 0)];
+    [[UINavigationBar appearance] setBackgroundImage:navigationBarBackgroung forBarMetrics:UIBarMetricsDefault];
 }
 /*
 - (void) isCoreDataLoaded{

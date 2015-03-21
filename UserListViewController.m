@@ -34,8 +34,11 @@
                                                 alpha:1.0];
     
     //self.tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectZero];
+    // Set Navegation Bar Background
     UIImage *navigationBarBackgroung = [[UIImage imageNamed:@"NavBar.png"] resizableImageWithCapInsets:UIEdgeInsetsMake( 0, 0, 0, 0)];
-    [[UINavigationBar appearance] setBackgroundImage:navigationBarBackgroung forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setBackgroundImage:navigationBarBackgroung forBarMetrics:UIBarMetricsDefault];
+
+    
     AppDelegate *app = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     app.managedObjectContext = app.document.managedObjectContext;
     
@@ -74,6 +77,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) viewDidAppear:(BOOL)animated{
+    UIImage *navigationBarBackgroung = [[UIImage imageNamed:@"NavBar.png"] resizableImageWithCapInsets:UIEdgeInsetsMake( 0, 0, 0, 0)];
+    [[UINavigationBar appearance] setBackgroundImage:navigationBarBackgroung forBarMetrics:UIBarMetricsDefault];
+}
 #pragma mark - TableView
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
